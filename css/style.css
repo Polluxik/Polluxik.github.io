@@ -1,0 +1,176 @@
+:root {
+    --main: #00c8ff;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    padding: 0;
+    max-width: 100%;
+    color: #FAFAFA !important;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #121212 !important;
+}
+
+header .bg-header {
+    position: relative;
+    left: 0;
+    right: 0;
+    top: 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(/images/test2.gif);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+header div {
+    color: white;
+}
+
+header .arrow img {
+    position: absolute;
+    bottom: 60px;
+    width: 50px;
+
+
+
+    animation-name: anim_arrow;
+    animation-duration: 1.75s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+header p {
+    font-size: 30px;
+}
+
+main {
+    max-width: 60%;
+    margin: auto;
+}
+
+.box-layout {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: 0;
+    display: flex;
+    align-items: flex-start;
+}
+
+.box-layout .content {
+    display: block;
+}
+
+.box-layout img {
+    animation-name: anim_pfp_glow;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.box-layout .content h1 {
+    border-bottom: var(--main) solid 2px;
+    display: inline-block;
+}
+
+.line {
+    border: 2px solid var(--main);
+}
+
+.project {
+    margin-top: 50px;
+    width: 500px;
+    /* animation-name: anim_pfp_glow;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out; */
+
+    box-shadow: 0px 0px 5px 4px var(--main);
+    -webkit-box-shadow: 0px 0px 5px 4px var(--main);
+    -moz-box-shadow: 0px 0px 5px 4px var(--main);
+}
+
+.project img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.title {
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+/* ANIMATIONS */
+
+@keyframes anim_arrow {
+    0% {
+        transform: translateY(-5px);
+    }
+
+    50% {
+        transform: translateY(5px);
+    }
+
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+/* @keyframes anim_pfp_glow {
+    0% {
+        box-shadow: 0px 0px 5px 4px var(--main);
+        -webkit-box-shadow: 0px 0px 5px 4px var(--main);
+        -moz-box-shadow: 0px 0px 5px 4px var(--main);
+    }
+
+    50% {
+        box-shadow: 0px 0px 10px 8px var(--main);
+        -webkit-box-shadow: 0px 0px 10px 8px var(--main);
+        -moz-box-shadow: 0px 0px 10px 8px var(--main);
+    }
+
+    100% {
+        box-shadow: 0px 0px 5px 4px var(--main);
+        -webkit-box-shadow: 0px 0px 5px 4px var(--main);
+        -moz-box-shadow: 0px 0px 5px 4px var(--main);
+    }
+} */
+
+
+/* OTHER */
+
+.example::-webkit-scrollbar {
+    display: none;
+}
+
+.example {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* NAV BAR */
+.nav{
+    list-style:none;
+    margin:0;
+    padding:0;
+    text-align:center;
+    justify-content: center;
+    padding-top: 15px;
+    padding-bottom: 40px;
+}
+.nav li{
+    display:inline;
+
+}
+.nav img{
+    display:inline-block;
+    height: 25px;
+    padding-right: 10px;
+}
